@@ -1,0 +1,17 @@
+[{
+  "name": "nexus-ecs2",
+  "image": "docker_nexus_inage",
+  "memoryReservation": 2048,
+  "portMappings": [{
+    "containerPort": 8081,
+    "hostPort": 8081
+  }],
+    "mountPoints": [
+        {
+          "readOnly": false,
+          "containerPath": "/nexus-data",
+          "sourceVolume": "efs"
+        }
+      ]
+  }
+]

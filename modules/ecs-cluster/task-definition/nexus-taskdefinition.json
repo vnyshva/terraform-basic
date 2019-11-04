@@ -1,0 +1,22 @@
+[{
+  "name": "nexus-ecs",
+  "image": "nexus_image_from_dockeratest",
+  "memoryReservation": 4096,
+  "portMappings": [{
+    "containerPort": 8081,
+    "hostPort": 8081
+  },
+  {
+    "containerPort": 8082,
+    "hostPort": 8082
+  }
+],
+    "mountPoints": [
+        {
+          "readOnly": false,
+          "containerPath": "/nexus-data",
+          "sourceVolume": "efs"
+        }
+      ]
+  }
+]
