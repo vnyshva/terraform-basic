@@ -1,4 +1,4 @@
-STACK = "nexus"
+STACK = "nxus"
 AWS_REGION = "eu-west-1"
 VPC_ID = "vpc-id"
 ALB_SUBNETS = "subnet-1-id,subnet-2,subnet-3"
